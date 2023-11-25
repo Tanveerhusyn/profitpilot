@@ -41,11 +41,11 @@ font-weight: 600;
 line-height: normal;
 }
 .hero-section-p{
-  color: rgba(6, 26, 42, 0.50);
+  color: #4F4F4F;
 font-family: Roboto;
 font-size: 20px;
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 line-height: normal;
 }
 .hero-demo-p{
@@ -59,7 +59,7 @@ line-height: normal;
 }
 
 .hero-image-main{
- width: 100%;
+ width: 700px;
  height: 100%; 
 }
 .feature-one-num{
@@ -122,7 +122,7 @@ a:hover {
 
 body {
   margin: 0;
- 
+ scroll-behavior: smooth;
    width: 100vw;
   min-height: 100vh;
 }

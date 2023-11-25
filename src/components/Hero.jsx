@@ -16,23 +16,22 @@ function Hero() {
           className="flex flex-col gap-4 justify-center "
         >
           <div className="flex flex-col gap-4 h-100 w-[100%] md:w-[80%]  justify-center">
-            <p className="bg-[#FFE68E] text-black py-2 px-4 mb-4 w-[160px] rounded-[8px] font-roboto hero-section-intro text-center font-bold mb-2">
-              Power up your business
+            <p className="bg-[#FFE68E] text-black py-2 px-4 mb-4 w-[fit-content] rounded-[8px] font-roboto hero-section-intro text-center font-bold mb-2">
+            Enhance Your Finance Intelligence
             </p>
             <h1 className="hero-section-h1 mb-4">
-              Automate your work and save your time
+            Optimize Your Finances with AI-Driven Analytics
             </h1>
             <div className="flex flex-col justify-center gap-4">
               <p className="hero-section-p text-left mb-2">
-                With highly Advanced AI features , feel the power to grow your
-                business{" "}
+              Unleash the potential of smart data analysis to streamline your financial processes. With our powerful AI chatbot, gain actionable insights and accelerate your business growth{" "}
               </p>
 
               <div className="flex flex-col md:flex-row justify-left gap-2 md:justify-left items-starts md:items-center gap-2">
                 <button className="bg-[#061A2A] mr-2 text-white font-bold py-4 px-6 rounded-md">
                   Request demo
                 </button>
-               <div className="flex gap-4 justify-center items-center">
+               <div className="flex gap-2 justify-center items-center">
                <svg
                   width="35"
                   height="36"
@@ -63,7 +62,7 @@ function Hero() {
               </div>
               <div>
                 <p className="hero-section-p text-left my-4">
-                  Integration with{" "}
+                Seamlessly Integrates with Leading Accounting Platforms:{" "}
                 </p>
                 <div className="flex justify-left w-100 items-center">
                   <img src={qb} />

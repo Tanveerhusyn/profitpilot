@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#F7F7F2] text-white p-4 px-20 relative">
+    <nav className="bg-[#F7F7F2] text-white p-4 px-24 relative">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
@@ -51,7 +51,7 @@ const Navbar = () => {
               Home
             </a>
             <a
-              href="#"
+              href="#about"
               className="block text-[#061A2A] font-roboto text-base font-normal leading-normal px-4 py-2 md:inline md:px-6"
             >
               About
@@ -76,12 +76,12 @@ const Navbar = () => {
               isMenuOpen ? "block" : "hidden"
             } md:flex`}
           >
-            <button class="flex w-100 items-center py-2 px-6 rounded-md border border-[#061A2A] bg-white text-black">
+            <button class="flex min-w-[fit-content] items-center py-2 px-6 rounded-md border border-[#061A2A] bg-white text-black">
               Sign In
             </button>
             <button
               onClick={handleSignUpClick}
-              className="flex items-center justify-center py-2 px-6 rounded-md bg-[#061A2A] text-white"
+              className="flex items-center min-w-[fit-content]  justify-center py-2 px-6 rounded-md bg-[#061A2A] text-white"
             >
               Sign Up
             </button>
