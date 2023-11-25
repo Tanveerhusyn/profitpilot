@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-section-intro{
+  display: flex;
+height: 31px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFE68E;
+color: rgba(15, 15, 15, 0.97);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.hero-section-h1{
+  color: #061A2A;
+font-family: Roboto;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.hero-section-p{
+  color: rgba(6, 26, 42, 0.50);
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.hero-demo-p{
+  color: #061A2A;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.hero-image-main{
+ width: 100%;
+ height: 100%; 
+}
+.feature-one-num{
+  color: #061A2A;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 28% */
+  letter-spacing: -0.5px;
+}
+.feature-one-p{
+  color: #061A2A;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.feature-one-h2{
+  color: #061A2A;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.feature-one-card-text-main{
+  color: #061A2A;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.feature-one-card-text-sub{
+  color: rgba(6, 26, 42, 0.50);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  width: 90%;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.image-main {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #061A2A;
+}
+
+body {
+  margin: 0;
+ 
+   width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+ 
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (max-width:768px){
+  .hero-image-main{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  #rotatable-svg {
+    transform: rotate(90deg);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
