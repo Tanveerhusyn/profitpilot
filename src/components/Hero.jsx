@@ -6,7 +6,8 @@ import xero from "../assets/xero.png";
 
 function Hero() {
   return (
-    <Container className="p-20 min-w-full bg-[#F7F7F2]  flex justify-center items-center">
+    <div id="home" className="w-[100%] bg-[#F7F7F2] flex justify-center items-center">
+    <Container className="p-2 md:p-20  w-full bg-[#F7F7F2]  flex justify-center items-center">
       <Row className="flex flex-col-reverse md:flex-row w-[95%] justify-center items-center">
         {/* Left Column */}
         <Col
@@ -82,6 +83,7 @@ function Hero() {
         </Col>
       </Row>
     </Container>
+</div>
   );
 }
 

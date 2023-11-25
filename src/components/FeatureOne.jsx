@@ -31,7 +31,7 @@ const features = [
   ];
 function FeatureOne() {
   return (
-    <div id="about" className="w-[100%] mt-10  flex justify-center items-center ">
+    <div id="feature" className="w-[100%] mt-10  flex justify-center items-center ">
       <Container>
         <Row className="mx-10">
           <Col>

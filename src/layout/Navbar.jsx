@@ -14,9 +14,21 @@ const Navbar = () => {
   const handleCloseModal = () => {
     setShowSignUpModal(false);
   };
+  const handleLinkClick = (event) => {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth"
+    });
+
+    setIsMenuOpen(false); // Close the menu if it's open on mobile
+  };
 
   return (
-    <nav className="bg-[#F7F7F2] text-white p-4 px-24 relative">
+    <nav className="bg-[#F7F7F2] text-white p-4 px-6 md:px-24 relative">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
@@ -45,28 +57,39 @@ const Navbar = () => {
         >
           <div className="flex flex-col md:flex-row justify-center items-center">
             <a
-              href="#"
+              href="#home"
+              onClick={handleLinkClick}
               className="block text-[#061A2A] font-roboto text-base font-normal leading-normal px-4 py-2 md:inline md:px-6"
             >
               Home
             </a>
             <a
-              href="#about"
+              href="#feature"
+              onClick={handleLinkClick}
               className="block text-[#061A2A] font-roboto text-base font-normal leading-normal px-4 py-2 md:inline md:px-6"
             >
-              About
+              Feature
             </a>
             <a
-              href="#"
+              href="#service"
+              onClick={handleLinkClick}
               className="block text-[#061A2A] font-roboto text-base font-normal leading-normal px-4 py-2 md:inline md:px-6"
             >
               Services
             </a>
             <a
-              href="#"
+              href="#pricing"
+              onClick={handleLinkClick}
               className="block text-[#061A2A] font-roboto text-base font-normal leading-normal px-4 py-2 md:inline md:px-6"
             >
-              Contact
+              Pricing
+            </a>
+            <a
+              href="#faq"
+              onClick={handleLinkClick}
+              className="block text-[#061A2A] font-roboto text-base font-normal leading-normal px-4 py-2 md:inline md:px-6"
+            >
+              FAQs
             </a>
           </div>
           {/* Buttons */}
@@ -74,7 +97,7 @@ const Navbar = () => {
           <div
             className={`flex   md:flex-row gap-2 my-4 md:my-0 ${
               isMenuOpen ? "block" : "hidden"
-            } md:flex`}
+            } md:flex justify-center`}
           >
             <button class="flex min-w-[fit-content] items-center py-2 px-6 rounded-md border border-[#061A2A] bg-white text-black">
               Sign In
@@ -94,3 +117,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+ 
+ 
