@@ -68,7 +68,7 @@ function FAQ() {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <div className="mt-2 px-4 py-2 bg-[#FFE68E] rounded-md">
+                <div className="mt-2 px-4 py-2 bg-[#FFE68E]">
                   <p className="text-black">{faq.answer}</p>
                 </div>
               </Transition>
